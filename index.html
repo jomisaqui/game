@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function computerPlay(){
+      var ganador;
+      resultado = Math.floor(Math.random() * 3);
+      if (resultado == 0){
+        ganador = "Rock";
+      }else if(resultado == 1){
+        ganador = "Paper";
+      }else{
+        ganador = "Scissors";
+      }
+      return ganador;
+    }
+    console.log(computerPlay())      
+  </script>
+</body>
+</html>
